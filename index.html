@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Hotel & Restaurant Pötter, Emsdetten (Entwurf)</title>
+<meta name="description" content="Unverbindlicher Entwurf von Leon Oßendorf für das Hotel & Restaurant Pötter in Emsdetten.">
+<link rel="preload" href="fonts/bricolage.woff" as="font" type="font/woff" crossorigin>
+<link rel="stylesheet" href="css/style.css?v=1">
+<link rel="icon" href="img/signet.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#inhalt">Zum Inhalt</a>
+
+<!-- Wiederverwendbare Teile für die Schlüsselanhänger -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <filter id="maserung" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.012 0.32" numOctaves="3" seed="7" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.36  0 0 0 0 0.19  0 0 0 0 0.08  0 0 0 -1.6 1.15" result="dunkel"/>
+      <feComposite in="dunkel" in2="SourceGraphic" operator="in" result="holz"/>
+      <feBlend in="holz" in2="SourceGraphic" mode="multiply"/>
+    </filter>
+    <linearGradient id="lack" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8a4a22"/>
+      <stop offset=".55" stop-color="#5e2e14"/>
+      <stop offset="1" stop-color="#3a1b0b"/>
+    </linearGradient>
+    <linearGradient id="glanz" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity=".0"/>
+      <stop offset=".22" stop-color="#fff" stop-opacity=".16"/>
+      <stop offset=".34" stop-color="#fff" stop-opacity=".0"/>
+      <stop offset="1" stop-color="#000" stop-opacity=".22"/>
+    </linearGradient>
+    <linearGradient id="messing" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f3dea0"/>
+      <stop offset=".35" stop-color="#c99a3e"/>
+      <stop offset=".7" stop-color="#8d6420"/>
+      <stop offset="1" stop-color="#e2c47a"/>
+    </linearGradient>
+    <symbol id="anhaenger" viewBox="0 -34 140 354">
+      <!-- Messinghaken aus der Leiste -->
+      <path d="M70 -34V2c0 9 6 14 12 14s11-5 11-12" fill="none" stroke="#3b2a0c" stroke-width="7" stroke-linecap="round" opacity=".45" transform="translate(1.5 2)"/>
+      <path d="M70 -34V2c0 9 6 14 12 14s11-5 11-12" fill="none" stroke="url(#messing)" stroke-width="5.5" stroke-linecap="round"/>
+      <!-- Schlüssel hinter dem Anhänger -->
+      <g transform="translate(46 46) rotate(22)">
+        <circle cx="0" cy="22" r="13" fill="none" stroke="url(#messing)" stroke-width="6"/>
+        <rect x="-3.5" y="34" width="7" height="64" rx="2" fill="url(#messing)"/>
+        <path d="M3 78h10v7H3zM3 89h7v6H3z" fill="url(#messing)"/>
+      </g>
+      <!-- Ring -->
+      <ellipse cx="70" cy="40" rx="17" ry="27" fill="none" stroke="#5b4214" stroke-width="7.5" opacity=".55" transform="translate(1.5 2)"/>
+      <ellipse cx="70" cy="40" rx="17" ry="27" fill="none" stroke="url(#messing)" stroke-width="6"/>
+      <!-- Schatten des Anhängers -->
+      <path d="M70 58c20 0 28 13 28 30l18 160c2 24-18 44-46 44S22 272 24 248L42 88c0-17 8-30 28-30z" fill="#000" opacity=".28" transform="translate(5 7)"/>
+      <!-- Körper aus Holz -->
+      <path d="M70 58c20 0 28 13 28 30l18 160c2 24-18 44-46 44S22 272 24 248L42 88c0-17 8-30 28-30z" fill="url(#lack)" filter="url(#maserung)"/>
+      <path d="M70 58c20 0 28 13 28 30l18 160c2 24-18 44-46 44S22 272 24 248L42 88c0-17 8-30 28-30z" fill="url(#glanz)"/>
+      <path d="M70 61c18 0 25 12 25 27l18 160c2 22-16 41-43 41S25 270 27 248L45 88c0-15 7-27 25-27z" fill="none" stroke="#fff" stroke-opacity=".14" stroke-width="1.5"/>
+      <!-- Loch mit Messingöse -->
+      <circle cx="70" cy="80" r="9" fill="url(#messing)"/>
+      <circle cx="70" cy="80" r="5.5" fill="#1d0e05"/>
+      <!-- Ring vorne durch die Öse -->
+      <path d="M58 60a17 27 0 0 0 12 7" fill="none" stroke="url(#messing)" stroke-width="6" stroke-linecap="round"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="kopf" id="top">
+  <a class="marke" href="#top" aria-label="Hotel & Restaurant Pötter, zum Seitenanfang">
+    <img src="img/logo-hell.svg" alt="Hotel & Restaurant Pötter" width="150" height="83">
+  </a>
+  <nav class="menue" aria-label="Hauptmenü">
+    <a href="#zimmer">Zimmer</a>
+    <a href="#feiern">Feiern</a>
+    <a href="#catering">Catering</a>
+    <a href="#restaurant">Restaurant</a>
+    <a href="#familie">Familie</a>
+  </nav>
+  <a class="kopf-tel" href="tel:+49257284242"><span>02572 84242</span></a>
+</header>
+
+<main id="inhalt">
+
+<!-- HERO: das Schlüsselbrett -->
+<section class="hero" aria-labelledby="hero-titel">
+  <div class="hero-bild">
+    <img src="img/saal-tafel.jpg" alt="Festlich gedeckte lange Tafel mit Blumen im Festsaal von Pötter" width="1920" height="1280" fetchpriority="high">
+  </div>
+  <div class="hero-brett">
+    <div class="hero-text">
+      <p class="seit">Seit 1953 am Grevener Damm 50</p>
+      <h1 id="hero-titel">Herzlich willkommen bei Familie Pötter.</h1>
+      <p class="hero-unter">Hotel, Restaurant und Festsaal in Emsdetten, heute in dritter Generation.</p>
+    </div>
+    <ul class="schluessel" aria-label="Wohin möchten Sie?">
+      <li>
+        <a class="key" href="#zimmer" data-open="buchung">
+          <svg class="fob" viewBox="0 -34 140 354" aria-hidden="true"><use href="#anhaenger"/></svg>
+          <span class="gravur"><span class="g-gross">Zimmer</span><span class="g-klein">buchen</span></span>
+        </a>
+      </li>
+      <li>
+        <a class="key" href="#anfrage" data-weg="saal">
+          <svg class="fob" viewBox="0 -34 140 354" aria-hidden="true"><use href="#anhaenger"/></svg>
+          <span class="gravur"><span class="g-gross">Feiern</span><span class="g-klein">im Saal anfragen</span></span>
+        </a>
+      </li>
+      <li>
+        <a class="key" href="#anfrage" data-weg="catering">
+          <svg class="fob" viewBox="0 -34 140 354" aria-hidden="true"><use href="#anhaenger"/></svg>
+          <span class="gravur"><span class="g-gross">Catering</span><span class="g-klein">außer Haus</span></span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ZIMMER -->
+<section class="block zimmer" id="zimmer" aria-labelledby="zimmer-titel">
+  <div class="zimmer-bilder">
+    <img class="z1" src="img/zimmer-1.jpg" alt="Doppelzimmer mit hellem Naturholz und Sesseln" width="1224" height="816" loading="lazy">
+    <img class="z2" src="img/zimmer-3.jpg" alt="Zimmer mit großem Landschaftsbild an der Wand" width="1192" height="795" loading="lazy">
+  </div>
+  <div class="zimmer-text">
+    <h2 id="zimmer-titel">Ruhig schlafen, mitten in Emsdetten.</h2>
+    <p>Unser Gästehaus liegt ruhig im Garten hinter dem Haus. Die Zimmer sind in hellen Naturhölzern eingerichtet, angelehnt an die Schönheit Emsdettens.</p>
+    <ul class="haekchen">
+      <li>Anreise 15 bis 22 Uhr, später nach Absprache</li>
+      <li>Frühstücksbuffet, Halb- und Vollpension</li>
+      <li>Kostenloser Parkplatz mit E-Ladestationen</li>
+      <li>Fahrradgarage mit Lademöglichkeit für E-Bikes</li>
+      <li>Kostenloses WLAN, Shuttle für Hotelgäste</li>
+    </ul>
+    <button class="knopf knopf-messing" type="button" data-open="buchung">Zimmer buchen</button>
+    <a class="mehr" href="#hinweis-unterseite" data-unterseite="Zimmer">Alle Zimmer ansehen</a>
+  </div>
+</section>
+
+<!-- FEIERN -->
+<section class="block feiern" id="feiern" aria-labelledby="feiern-titel">
+  <div class="feiern-kopf">
+    <h2 id="feiern-titel">Feiern im Schatten der <span class="nw">St.-Marien-Kirche.</span></h2>
+    <p>Vom kleinen Kreis bis zur großen Hochzeit: Drei Räume, eine Küche, und Familie Pötter kümmert sich um alles.</p>
+  </div>
+  <div class="raeume">
+    <article class="raum">
+      <img src="img/festsaal.jpg" alt="Festsaal mit runden, festlich gedeckten Tischen" width="1224" height="816" loading="lazy">
+      <div class="raum-text">
+        <h3>Festsaal <span class="anzahl">bis 130 Gäste</span></h3>
+        <p>Klimatisiert, flexibel teilbar, mit Thekenecke und großer Tanzfläche.</p>
+      </div>
+    </article>
+    <article class="raum">
+      <img src="img/kaminzimmer.jpg" alt="Kamin im Kaminzimmer" width="1224" height="816" loading="lazy">
+      <div class="raum-text">
+        <h3>Kaminzimmer <span class="anzahl">20 bis 50 Gäste</span></h3>
+        <p>Für Menüs in festlicher Runde. Im Winter brennt auf Wunsch das Feuer.</p>
+      </div>
+    </article>
+    <article class="raum">
+      <img src="img/clubzimmer.jpg" alt="Gedeckte Tafel in einem holzvertäfelten Raum" width="1224" height="816" loading="lazy">
+      <div class="raum-text">
+        <h3>Clubzimmer <span class="anzahl">bis 14 Gäste</span></h3>
+        <p>Am großen Tisch, in geselliger Runde.</p>
+      </div>
+    </article>
+  </div>
+  <ul class="anlaesse" aria-label="Anlässe">
+    <li><button type="button" data-anlass="Hochzeit">Hochzeit</button></li>
+    <li><button type="button" data-anlass="Geburtstag">Geburtstag</button></li>
+    <li><button type="button" data-anlass="Firmenfeier">Firmenfeier</button></li>
+    <li><button type="button" data-anlass="Trauerkaffee">Trauerkaffee</button></li>
+    <li><button type="button" data-anlass="Taufe oder Kommunion">Taufe oder Kommunion</button></li>
+    <li><button type="button" data-anlass="Jubiläum">Jubiläum</button></li>
+  </ul>
+</section>
+
+<!-- ANFRAGE mit Weiche -->
+<section class="block anfrage" id="anfrage" aria-labelledby="anfrage-titel">
+  <div class="anfrage-seite">
+    <h2 id="anfrage-titel">Ihre Feier, in einer Minute angefragt.</h2>
+    <p>Anlass, Datum, Gäste: mehr braucht es für den Anfang nicht. Wir melden uns mit Vorschlägen für Raum und Menü.</p>
+    <figure class="anfrage-foto">
+      <img src="img/tischkarte.jpg" alt="Tischkarte mit Namen neben einer gefalteten Serviette" width="1200" height="800" loading="lazy">
+    </figure>
+  </div>
+
+  <form class="formular" id="feierform" novalidate>
+    <div class="weiche" role="radiogroup" aria-label="Wo soll gefeiert werden?">
+      <label><input type="radio" name="weg" value="saal" checked><span>Feier bei uns im Haus</span></label>
+      <label><input type="radio" name="weg" value="catering"><span>Catering außer Haus</span></label>
+    </div>
+
+    <fieldset class="feld">
+      <legend>Anlass</legend>
+      <div class="chips" id="anlass-chips">
+        <label><input type="radio" name="anlass" value="Hochzeit"><span>Hochzeit</span></label>
+        <label><input type="radio" name="anlass" value="Geburtstag"><span>Geburtstag</span></label>
+        <label><input type="radio" name="anlass" value="Firmenfeier"><span>Firmenfeier</span></label>
+        <label><input type="radio" name="anlass" value="Trauerkaffee"><span>Trauerkaffee</span></label>
+        <label><input type="radio" name="anlass" value="Taufe oder Kommunion"><span>Taufe oder Kommunion</span></label>
+        <label><input type="radio" name="anlass" value="Jubiläum"><span>Jubiläum</span></label>
+        <label><input type="radio" name="anlass" value="Etwas anderes"><span>Etwas anderes</span></label>
+      </div>
+    </fieldset>
+
+    <div class="zweispaltig">
+      <div class="feld">
+        <label for="datum">Wunschtermin <span class="opt">(Angabe optional)</span></label>
+        <input type="date" id="datum" name="datum">
+      </div>
+      <div class="feld nur-catering">
+        <label for="ort">Wo wird gefeiert? <span class="opt">(Angabe optional)</span></label>
+        <input type="text" id="ort" name="ort" placeholder="z. B. Firma in Emsdetten" autocomplete="off">
+      </div>
+    </div>
+
+    <div class="feld">
+      <label for="gaeste">Wie viele Gäste? <output id="gaeste-zahl" for="gaeste">40</output></label>
+      <input type="range" id="gaeste" name="gaeste" min="5" max="130" step="5" value="40">
+      <p class="raumtipp" id="raumtipp" aria-live="polite"></p>
+    </div>
+
+    <div class="feld">
+      <label for="wuensche">Ihre Wünsche <span class="opt">(Angabe optional)</span></label>
+      <textarea id="wuensche" name="wuensche" rows="3" placeholder="z. B. Buffet oder Menü, Kaffee und Kuchen, Tanzfläche"></textarea>
+    </div>
+
+    <div class="zweispaltig">
+      <div class="feld">
+        <label for="name">Ihr Name <span class="opt">(Angabe optional)</span></label>
+        <input type="text" id="name" name="name" autocomplete="name">
+      </div>
+      <div class="feld">
+        <label for="rueckweg">Telefon oder E-Mail</label>
+        <input type="text" id="rueckweg" name="rueckweg" autocomplete="email" required aria-describedby="rueckweg-hilfe">
+        <p class="hilfe" id="rueckweg-hilfe">Nur damit wir Ihnen antworten können.</p>
+      </div>
+    </div>
+
+    <button class="knopf knopf-gruen" type="submit">Anfrage abschicken</button>
+    <p class="entwurf-vermerk">Entwurf: Diese Anfrage wird nicht versendet.</p>
+    <div class="bestaetigung" id="bestaetigung" tabindex="-1" hidden></div>
+  </form>
+</section>
+
+<!-- CATERING -->
+<section class="block catering" id="catering" aria-labelledby="catering-titel">
+  <div class="catering-bild">
+    <img src="img/buffet.jpg" alt="Angerichtetes Buffet mit Blumen und Kerzenlicht" width="1200" height="800" loading="lazy">
+  </div>
+  <div class="catering-text">
+    <h2 id="catering-titel">Unsere Küche kommt auch zu Ihnen.</h2>
+    <p>Für die Feier zu Hause, im Verein oder in der Firma: Buffet oder Menü aus der Küche von Thorsten Pötter, westfälisch, mediterran oder international.</p>
+    <ul class="haekchen">
+      <li>Partyservice für bis zu 120 Personen</li>
+      <li>Menüs für feierliche Anlässe</li>
+      <li>Für Hochzeiten, Geburtstage, Jubiläen und Versammlungen</li>
+    </ul>
+    <a class="knopf knopf-messing" href="#anfrage" data-weg="catering">Catering anfragen</a>
+  </div>
+</section>
+
+<!-- RESTAURANT -->
+<section class="block restaurant" id="restaurant" aria-labelledby="restaurant-titel">
+  <div class="restaurant-text">
+    <h2 id="restaurant-titel">Abends bei Pötter.</h2>
+    <p>Frische, saisonale Küche, westfälisch, mediterran und international. Dazu zwei Lounges für Wein und Bier, die Pilsstube zum Klönen in geselliger Runde und im Sommer der Biergarten.</p>
+    <dl class="zeiten">
+      <div><dt>Montag</dt><dd>ab 17 Uhr</dd></div>
+      <div><dt>Dienstag</dt><dd>Ruhetag</dd></div>
+      <div><dt>Mittwoch bis Samstag</dt><dd>ab 17 Uhr</dd></div>
+      <div><dt>Sonntag</dt><dd>Ruhetag</dd></div>
+    </dl>
+    <div class="knopfreihe">
+      <button class="knopf knopf-hell" type="button" data-open="tisch">Tisch reservieren</button>
+      <a class="mehr mehr-hell" href="#hinweis-unterseite" data-unterseite="Speisekarte">Aktuelle Speisekarte</a>
+    </div>
+  </div>
+  <div class="restaurant-bilder">
+    <img class="r1" src="img/pilsstube.jpg" alt="Thorsten Pötter zapft ein Pils an der Theke der Pilsstube" width="1224" height="816" loading="lazy">
+    <img class="r2" src="img/biergarten.jpg" alt="Gedeckte Tafeln im Biergarten unter Sonnenschirmen" width="1280" height="960" loading="lazy">
+  </div>
+</section>
+
+<!-- FAMILIE: Schlüsselbrett der Jahre -->
+<section class="block familie" id="familie" aria-labelledby="familie-titel">
+  <div class="familie-kopf">
+    <figure class="familie-foto">
+      <img src="img/familie.jpg" alt="Ludger, Juliane, Catharina und Thorsten Pötter an der Rezeption" width="830" height="542" loading="lazy">
+      <figcaption>Ludger, Juliane, Catharina und Thorsten Pötter</figcaption>
+    </figure>
+    <div>
+      <h2 id="familie-titel">Drei Generationen, ein Haus.</h2>
+      <p>1953 eröffnete am Grevener Damm eine Gaststätte. Daraus wurden Festsaal, Hotel und Gästehaus. Heute führt Thorsten Pötter das Haus als Inhaber und Koch, seine Schwester Catharina Kötte leitet das Hotel.</p>
+      <p class="zitat">„Auf ein baldiges Willkommen-Heißen!“ <span>Ihre Familie Pötter &amp; Team</span></p>
+    </div>
+  </div>
+  <ol class="jahre" aria-label="Geschichte des Hauses">
+    <li><span class="jahr">1953</span><span class="was">Gaststätte am Grevener Damm eröffnet</span></li>
+    <li><span class="jahr">1988</span><span class="was">Neuer Festsaal für 130 Personen</span></li>
+    <li><span class="jahr">1995</span><span class="was">Hotel mit acht Zimmern</span></li>
+    <li><span class="jahr">2008</span><span class="was">Anbau mit vierzehn Zimmern</span></li>
+    <li><span class="jahr">2013</span><span class="was">Drei Sterne, klassifiziert vom DEHOGA</span></li>
+    <li><span class="jahr">2015</span><span class="was">Thorsten Pötter: 2. Platz beim „Preis für Große Gastlichkeit“ von L’Art de Vivre</span></li>
+    <li><span class="jahr">2019</span><span class="was">Thorsten Pötter übernimmt als Inhaber</span></li>
+  </ol>
+  <p class="vereine">Vereinslokal von Frauenchor und Männerchor Emsdetten, Austumer Schützengesellschaft, Schützengesellschaft Berge und Rassegeflügelzuchtverein.</p>
+</section>
+
+<!-- ANFAHRT -->
+<section class="block anfahrt" id="anfahrt" aria-labelledby="anfahrt-titel">
+  <img class="luftbild" src="img/luftbild.jpg" alt="Luftbild: St.-Marien-Kirche und daneben das Haus Pötter" width="1600" height="1200" loading="lazy">
+  <div class="anfahrt-text">
+    <h2 id="anfahrt-titel">So finden Sie uns.</h2>
+    <address>Hotel &amp; Restaurant Pötter<br>Grevener Damm 50<br>48282 Emsdetten</address>
+    <ul class="entfernung">
+      <li><strong>1,5 km</strong> zur Stadtmitte und zum Bahnhof</li>
+      <li><strong>10 km</strong> zum Flughafen Münster/Osnabrück</li>
+      <li><strong>50 m</strong> zur Bushaltestelle</li>
+    </ul>
+    <p>Von der A1, Abfahrt Greven, auf die B 481 Richtung Emsdetten. Eigener Parkplatz direkt am Haus.</p>
+    <div class="knopfreihe">
+      <a class="knopf knopf-gruen" href="https://www.openstreetmap.org/?mlat=52.16956&amp;mlon=7.540271#map=17/52.16956/7.540271" rel="noopener" target="_blank">Route planen</a>
+      <a class="knopf knopf-rand" href="tel:+49257284242">02572 84242</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="fuss">
+  <div class="fuss-spalten">
+    <div>
+      <img src="img/logo-hell.svg" alt="Hotel & Restaurant Pötter" width="130" height="72">
+      <p>Grevener Damm 50, 48282 Emsdetten<br><a href="tel:+49257284242">02572 84242</a> · <a href="mailto:info@hotelpoetter.de">info@hotelpoetter.de</a></p>
+    </div>
+    <form class="kurzform" id="kurzform" novalidate>
+      <p class="kurzform-titel">Kurze Frage an die Rezeption?</p>
+      <label for="kf-text" class="unsichtbar">Ihre Nachricht</label>
+      <textarea id="kf-text" rows="2" placeholder="Ihre Nachricht"></textarea>
+      <label for="kf-weg" class="unsichtbar">Telefon oder E-Mail</label>
+      <input id="kf-weg" type="text" placeholder="Telefon oder E-Mail" required>
+      <button class="knopf knopf-messing" type="submit">Senden</button>
+      <p class="kf-ok" id="kf-ok" hidden>Danke! Im Entwurf wird nichts versendet. In der fertigen Seite landet Ihre Nachricht direkt an der Rezeption.</p>
+    </form>
+    <nav aria-label="Rechtliches" class="fuss-links">
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </nav>
+  </div>
+  <p class="entwurf">Unverbindlicher Entwurf von Leon Oßendorf, kein offizieller Auftritt von Hotel &amp; Restaurant Pötter. Fotos: Hotel &amp; Restaurant Pötter.</p>
+</footer>
+
+<!-- Mobile Leiste -->
+<nav class="daumen" aria-label="Schnellzugriff">
+  <a href="tel:+49257284242">Anrufen</a>
+  <button type="button" data-open="buchung">Zimmer</button>
+  <a href="#anfrage" data-weg="saal">Feier anfragen</a>
+</nav>
+
+<!-- Demo-Fenster -->
+<dialog class="fenster" id="fenster-buchung" aria-labelledby="fb-titel">
+  <form method="dialog" class="fenster-inhalt" id="buchungform">
+    <h2 id="fb-titel">Zimmer buchen</h2>
+    <div class="zweispaltig">
+      <div class="feld"><label for="fb-an">Anreise</label><input type="date" id="fb-an"></div>
+      <div class="feld"><label for="fb-ab">Abreise</label><input type="date" id="fb-ab"></div>
+    </div>
+    <div class="feld"><label for="fb-pers">Personen</label>
+      <select id="fb-pers"><option>1</option><option selected>2</option><option>3</option><option>4</option></select></div>
+    <button class="knopf knopf-gruen" type="button" id="fb-pruefen">Freie Zimmer zeigen</button>
+    <p class="fenster-hinweis" id="fb-hinweis">In der fertigen Seite zeigt dieser Knopf direkt die freien Zimmer aus Ihrem Buchungssystem DIRS21, ohne Umweg.</p>
+    <button class="schliessen" value="zu" aria-label="Fenster schließen">×</button>
+  </form>
+</dialog>
+<dialog class="fenster" id="fenster-tisch" aria-labelledby="ft-titel">
+  <form method="dialog" class="fenster-inhalt">
+    <h2 id="ft-titel">Tisch reservieren</h2>
+    <p>In der fertigen Seite öffnet sich hier Ihre Tischreservierung von gastronaut, wie bisher: Tag, Uhrzeit, Personen, fertig.</p>
+    <p class="fenster-hinweis">Lieber anrufen? <a href="tel:+49257284242">02572 84242</a></p>
+    <button class="schliessen" value="zu" aria-label="Fenster schließen">×</button>
+  </form>
+</dialog>
+<dialog class="fenster" id="fenster-unterseite" aria-labelledby="fu-titel">
+  <form method="dialog" class="fenster-inhalt">
+    <h2 id="fu-titel">Unterseite</h2>
+    <p id="fu-text">Diese Unterseite baue ich nach unserem Gespräch aus.</p>
+    <button class="schliessen" value="zu" aria-label="Fenster schließen">×</button>
+  </form>
+</dialog>
+
+<script src="js/main.js?v=1"></script>
+</body>
+</html>
