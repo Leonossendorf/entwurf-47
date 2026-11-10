@@ -8,7 +8,7 @@
 
   function raumTipp(){
     var n = +slider.value;
-    zahl.textContent = n + (n >= 130 && weg() === 'saal' ? '' : '');
+    zahl.textContent = n;
     if (weg() === 'catering') {
       tipp.innerHTML = n > 120
         ? 'Für <strong>mehr als 120 Gäste</strong> sprechen wir das Catering gern persönlich mit Ihnen ab.'
@@ -16,10 +16,10 @@
       return;
     }
     var raum;
-    if (n <= 14) raum = '<strong>Clubzimmer</strong>, am großen Tisch für bis zu 14 Gäste.';
-    else if (n <= 50) raum = '<strong>Kaminzimmer</strong>, für 20 bis 50 Gäste, im Winter mit Feuer.';
-    else raum = '<strong>Festsaal</strong>, mit Tanzfläche und Thekenecke, bis 130 Gäste.';
-    tipp.innerHTML = 'Für ' + n + ' Gäste passt das ' + raum;
+    if (n <= 14) raum = 'das <strong>Clubzimmer</strong>, am großen Tisch für bis zu 14 Gäste.';
+    else if (n <= 50) raum = 'das <strong>Kaminzimmer</strong>, für 20 bis 50 Gäste, im Winter mit Feuer.';
+    else raum = 'der <strong>Festsaal</strong>, mit Tanzfläche und Thekenecke, bis 130 Gäste.';
+    tipp.innerHTML = 'Für ' + n + ' Gäste passt ' + raum;
   }
 
   function setzeWeg(w){
